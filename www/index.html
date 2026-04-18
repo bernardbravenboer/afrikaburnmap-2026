@@ -174,7 +174,7 @@
 </header>
 <div class="viewport" id="viewport">
   <div class="map" id="map">
-    <img id="mapimg" src="2026_AfrikaBurnMap-scaled.jpg" alt="AfrikaBurn 2026 map" draggable="false">
+    <img id="mapimg" src="2026_map_landscape.svg" alt="AfrikaBurn 2026 map" draggable="false">
   </div>
 </div>
 <div class="zoom-ctl">
@@ -223,16 +223,37 @@
   const tip = document.getElementById("tip");
   const zlabel = document.getElementById("zlabel");
 
-  const NAT_W = data.map_w || 2560;
-  const NAT_H = data.map_h || 1424;
+  // ── Coordinate system ────────────────────────────────────
+  // data.js coords are in portrait SVG viewBox space (185x211.7 units).
+  // We render both SVGs at large pixel dimensions so they look sharp.
+  // Scale factors convert viewBox units to pixel dimensions.
+  const imgSrc = img.getAttribute("src").split("/").pop();
 
-  // Set the map element to natural image size; we scale via transform.
-  img.style.width = NAT_W + "px";
+  // Portrait SVG: render at 6985x8000px (viewBox 185x211.7, scale=37.76)
+  // Landscape SVG: render at 6372x3554px (viewBox 540x300.9, scale=11.8)
+  // Hotspot coords (in portrait viewBox space) need different transforms per image.
+  const CONF = {
+    '2026_map_portrait.png':  { W:4000, H:4577, ax:18.257951, bx:0.014781,  cx:0.4550,  ay:0.009115, by:18.183899, cy:2.2144 },
+    '2026_map_landscape.png': { W:4000, H:2229, ax:14.243256, bx:-0.010784, cx:-2.2727, ay:0.007199, by:14.185738, cy:4.2435 },
+    '2026_map_landscape.svg': { W:6372, H:3554, ax:0.600939*6985/185.00001, bx:-0.000455*6985/185.00001, cx:-3.6204, ay:0.000304*8000/211.69999, by:0.599091*8000/211.69999, cy:6.7660 },
+  };
+  const C = CONF[imgSrc] || CONF['2026_map_landscape.svg'];
+  const NAT_W = C.W;
+  const NAT_H = C.H;
+
+  img.style.width  = NAT_W + "px";
   img.style.height = NAT_H + "px";
-  mapDiv.style.width = NAT_W + "px";
+  mapDiv.style.width  = NAT_W + "px";
   mapDiv.style.height = NAT_H + "px";
 
-  // Hotspots in natural-pixel coords. They sit inside mapDiv so they inherit its transform.
+  function toImg(px, py) {
+    return {
+      x: C.ax * px + C.bx * py + C.cx,
+      y: C.ay * px + C.by * py + C.cy
+    };
+  }
+
+  // Hotspots sit inside mapDiv and inherit its CSS transform.
   const hotspots = [];
   for (const e of data.entries) {
     const el = document.createElement("div");
@@ -243,10 +264,11 @@
     el.dataset.section = e.section;
     el.dataset.src = e.src || "ocr";
     const padX = 4, padY = 4;
-    const nx = (e.x ?? 0) - padX;
-    const ny = (e.y ?? 0) - padY;
-    const nw = Math.max(20, (e.w ?? 24)) + padX*2;
-    const nh = Math.max(16, (e.h ?? 18)) + padY*2;
+    const mapped = toImg(e.x ?? 0, e.y ?? 0);
+    const nx = mapped.x - padX;
+    const ny = mapped.y - padY;
+    const nw = Math.max(20, (e.w ?? 0.6) * C.ax) + padX*2;
+    const nh = Math.max(16, (e.h ?? 0.4) * C.by) + padY*2;
     el.style.left = nx + "px";
     el.style.top  = ny + "px";
     el.style.width  = nw + "px";
@@ -499,7 +521,7 @@
   }
 
   function frameHits(hits) {
-    // Compute bounding box of hit hotspots in natural coords
+    // Pan to centre the hits without changing zoom level
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
     for (const el of hits) {
       const x = parseFloat(el.style.left), y = parseFloat(el.style.top);
@@ -507,17 +529,8 @@
       if (x < minX) minX = x; if (y < minY) minY = y;
       if (x + w > maxX) maxX = x + w; if (y + h > maxY) maxY = y + h;
     }
-    const pad = 80; // natural-pixel padding around the hit region
-    minX -= pad; minY -= pad; maxX += pad; maxY += pad;
-    const rw = maxX - minX, rh = maxY - minY;
-    const vw = viewport.clientWidth, vh = viewport.clientHeight;
-    // Target scale: fit region, but don't zoom out below current fit, or too far in
-    const targetScale = Math.min(vw / rw, vh / rh);
-    const minS = fitScale();
-    const ns = Math.max(minS, Math.min(MAX_SCALE, targetScale));
-    scl = ns;
-    // Center the region
     const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    const vw = viewport.clientWidth, vh = viewport.clientHeight;
     tx = vw / 2 - cx * scl;
     ty = vh / 2 - cy * scl;
     clampPan();
@@ -540,7 +553,7 @@
     if (m) { q.value = decodeURIComponent(m[1]); applyFilter(); }
   }
 
-  // Init once image loads (for accurate clamping — actually we use NAT_W/H so can init now)
+  // Init
   function init() { resetView(); readHash(); }
   if (img.complete) init(); else img.addEventListener("load", init);
   window.addEventListener("resize", () => {
@@ -659,5 +672,14 @@
 
 <script data-goatcounter="https://bernardbravenboer.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+<script src="location-pin.js"></script>
 </body>
 </html>
+<script>
+// Force reset view when app resumes from background
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    window.location.reload();
+  }
+});
+</script>

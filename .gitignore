@@ -1,3 +1,7 @@
-work/
-.DS_Store
-*.log
+node_modules/
+android/app/build/
+android/.gradle/
+*.apk
+*.aab
+keystore.properties
+afrikaburn.keystore

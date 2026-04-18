@@ -1,0 +1,602 @@
+{
+  "ABB": {
+    "x": 119.2969,
+    "y": 56.6003,
+    "name": "ABnB",
+    "grid": "W3"
+  },
+  "ASS": {
+    "x": 144.4131,
+    "y": 48.9797,
+    "name": "Alegra Space Station",
+    "grid": "X3"
+  },
+  "TAS": {
+    "x": 76.0281,
+    "y": 24.3897,
+    "name": "The ArtSluts",
+    "grid": "T2"
+  },
+  "BAD": {
+    "x": 93.7894,
+    "y": 52.3579,
+    "name": "BabaDoof",
+    "grid": "U3"
+  },
+  "BEE": {
+    "x": 58.8927,
+    "y": 78.3621,
+    "name": "Bee-Have",
+    "grid": "S5"
+  },
+  "BIO": {
+    "x": 87.6081,
+    "y": 39.1594,
+    "name": "Bioskop & Bangaz",
+    "grid": "U2"
+  },
+  "BDS": {
+    "x": 91.5203,
+    "y": 64.4565,
+    "name": "Birthday Suits",
+    "grid": "U4"
+  },
+  "BLM": {
+    "x": 61.7877,
+    "y": 93.6032,
+    "name": "Bloody Mzuris",
+    "grid": "T5"
+  },
+  "BEY": {
+    "x": 87.0604,
+    "y": 52.5936,
+    "name": "Bull's Eye",
+    "grid": "U3"
+  },
+  "BKR": {
+    "x": 141.8311,
+    "y": 55.0291,
+    "name": "Bureau for Karmic Redistribution",
+    "grid": "X3"
+  },
+  "TBA": {
+    "x": 81.3486,
+    "y": 37.1168,
+    "name": "The Burning Arms",
+    "grid": "U2"
+  },
+  "BMA": {
+    "x": 55.7629,
+    "y": 85.747,
+    "name": "Burning Mail",
+    "grid": "S5"
+  },
+  "BUT": {
+    "x": 49.8164,
+    "y": 76.0838,
+    "name": "Buttery Beasts",
+    "grid": "S4"
+  },
+  "404": {
+    "x": 55.6064,
+    "y": 98.2384,
+    "name": "Camp 404",
+    "grid": "S6"
+  },
+  "DEL": {
+    "x": 124.0697,
+    "y": 58.5644,
+    "name": "Camp DelicioZA",
+    "grid": "W3"
+  },
+  "SAM": {
+    "x": 78.6101,
+    "y": 42.5376,
+    "name": "Camp Sand Mandala",
+    "grid": "U3"
+  },
+  "CWN": {
+    "x": 143.4742,
+    "y": 65.1636,
+    "name": "Camp Why Not",
+    "grid": "X4"
+  },
+  "CHA": {
+    "x": 83.4612,
+    "y": 42.7733,
+    "name": "Chakana",
+    "grid": "U3"
+  },
+  "CET": {
+    "x": 73.6807,
+    "y": 32.1674,
+    "name": "Close Encounters (Of the Thirst Kind)",
+    "grid": "T2"
+  },
+  "CGC": {
+    "x": 78.5319,
+    "y": 44.9731,
+    "name": "Concept Ground Control",
+    "grid": "U3"
+  },
+  "COP": {
+    "x": 89.7207,
+    "y": 60.2927,
+    "name": "Copacabana",
+    "grid": "U4"
+  },
+  "COS": {
+    "x": 135.7281,
+    "y": 52.0437,
+    "name": "Cosmic Canvas",
+    "grid": "X3"
+  },
+  "CCT": {
+    "x": 58.2667,
+    "y": 88.261,
+    "name": "Cosmic CommuniTea",
+    "grid": "S5"
+  },
+  "CRA": {
+    "x": 61.4747,
+    "y": 80.0905,
+    "name": "cRacKPoT",
+    "grid": "T5"
+  },
+  "CUR": {
+    "x": 59.2056,
+    "y": 110.0228,
+    "name": "Curiocity",
+    "grid": "S6"
+  },
+  "CYM": {
+    "x": 57.9537,
+    "y": 105.0733,
+    "name": "CYMATICA",
+    "grid": "S6"
+  },
+  "DHA": {
+    "x": 83.9307,
+    "y": 28.1607,
+    "name": "The Department of Homely Affairs",
+    "grid": "U2"
+  },
+  "DIS": {
+    "x": 62.2571,
+    "y": 104.4448,
+    "name": "DisFUNKtion",
+    "grid": "T6"
+  },
+  "DID": {
+    "x": 110.5336,
+    "y": 56.6003,
+    "name": "Disko Dolce",
+    "grid": "V3"
+  },
+  "DMT": {
+    "x": 123.3655,
+    "y": 51.1795,
+    "name": "DMT",
+    "grid": "W3"
+  },
+  "DDS": {
+    "x": 64.9957,
+    "y": 93.6032,
+    "name": "Dust Devil Saloon",
+    "grid": "T5"
+  },
+  "TDD": {
+    "x": 137.0582,
+    "y": 46.4657,
+    "name": "The Dusty Dungeon",
+    "grid": "X2"
+  },
+  "EKA": {
+    "x": 88.86,
+    "y": 26.7466,
+    "name": "Ekasi Theme Camp",
+    "grid": "U2"
+  },
+  "ENO": {
+    "x": 155.602,
+    "y": 56.4432,
+    "name": "Enos Nookie",
+    "grid": "Y3"
+  },
+  "FAM": {
+    "x": 55.9976,
+    "y": 110.6513,
+    "name": "Family Business",
+    "grid": "S6"
+  },
+  "FCC": {
+    "x": 50.0511,
+    "y": 112.0654,
+    "name": "Fractal Chill",
+    "grid": "S6"
+  },
+  "FFI": {
+    "x": 47.9385,
+    "y": 70.8201,
+    "name": "Funky Fiasco",
+    "grid": "S4"
+  },
+  "GOW": {
+    "x": 65.7781,
+    "y": 107.7444,
+    "name": "Garden of Weeden",
+    "grid": "T6"
+  },
+  "TGM": {
+    "x": 53.1809,
+    "y": 77.8122,
+    "name": "The Greasemonkeys",
+    "grid": "S5"
+  },
+  "HSP": {
+    "x": 95.902,
+    "y": 60.7641,
+    "name": "HeartSpace",
+    "grid": "V4"
+  },
+  "THM": {
+    "x": 85.652,
+    "y": 33.2673,
+    "name": "The Holy Mountain",
+    "grid": "U2"
+  },
+  "CAT": {
+    "x": 72.6636,
+    "y": 25.411,
+    "name": "Home of the Psychic Cat",
+    "grid": "T2"
+  },
+  "HOB": {
+    "x": 134.8674,
+    "y": 54.4006,
+    "name": "The House Of Boho",
+    "grid": "X3"
+  },
+  "HUG": {
+    "x": 47.3908,
+    "y": 80.4833,
+    "name": "Huggas and the Little Bookie Nook",
+    "grid": "S5"
+  },
+  "HYD": {
+    "x": 85.652,
+    "y": 62.2568,
+    "name": "Hydration Station",
+    "grid": "U4"
+  },
+  "IMB": {
+    "x": 128.2167,
+    "y": 58.8786,
+    "name": "Imbizo Lounge",
+    "grid": "W3"
+  },
+  "INS": {
+    "x": 88.0776,
+    "y": 54.6362,
+    "name": "The Inside Scoop",
+    "grid": "U3"
+  },
+  "JEL": {
+    "x": 77.6712,
+    "y": 36.3312,
+    "name": "Jelly People",
+    "grid": "T2"
+  },
+  "KAG": {
+    "x": 41.0531,
+    "y": 66.342,
+    "name": "Kaggen meets Rainbow dancers",
+    "grid": "R4"
+  },
+  "KEE": {
+    "x": 86.3562,
+    "y": 35.467,
+    "name": "The Keepers",
+    "grid": "U2"
+  },
+  "KOO": {
+    "x": 52.8679,
+    "y": 117.1719,
+    "name": "Kooky Kutters",
+    "grid": "S7"
+  },
+  "KRE": {
+    "x": 88.1558,
+    "y": 65.7135,
+    "name": "KREME",
+    "grid": "U4"
+  },
+  "LCT": {
+    "x": 93.7111,
+    "y": 44.5802,
+    "name": "La Casa Timeless",
+    "grid": "U3"
+  },
+  "LOL": {
+    "x": 66.9518,
+    "y": 27.8464,
+    "name": "Lands of Love",
+    "grid": "T2"
+  },
+  "TLR": {
+    "x": 151.6116,
+    "y": 61.7069,
+    "name": "The Last Resort",
+    "grid": "Y4"
+  },
+  "LPP": {
+    "x": 68.5949,
+    "y": 82.2902,
+    "name": "Le Petit Paris",
+    "grid": "T5"
+  },
+  "LNS": {
+    "x": 88.6253,
+    "y": 32.3245,
+    "name": "Letters we never sent",
+    "grid": "U2"
+  },
+  "TLD": {
+    "x": 104.2741,
+    "y": 57.5431,
+    "name": "The Lion's Den",
+    "grid": "V3"
+  },
+  "LUM": {
+    "x": 132.2071,
+    "y": 59.2714,
+    "name": "Luminosity Lounge",
+    "grid": "X3"
+  },
+  "MHV": {
+    "x": 65.5434,
+    "y": 103.5021,
+    "name": "Mad Hatters Village",
+    "grid": "T6"
+  },
+  "MAD": {
+    "x": 131.6594,
+    "y": 50.7867,
+    "name": "MadWay",
+    "grid": "X3"
+  },
+  "MAL": {
+    "x": 146.9169,
+    "y": 44.266,
+    "name": "MAHALA",
+    "grid": "X3"
+  },
+  "MAR": {
+    "x": 76.8887,
+    "y": 30.9104,
+    "name": "MARAH",
+    "grid": "T2"
+  },
+  "TMB": {
+    "x": 84.9478,
+    "y": 48.6655,
+    "name": "The MemberBerries",
+    "grid": "U3"
+  },
+  "MEM": {
+    "x": 90.3467,
+    "y": 34.6028,
+    "name": "Memento Mori Conversation Camp",
+    "grid": "U2"
+  },
+  "MIM": {
+    "x": 88.7818,
+    "y": 40.9664,
+    "name": "Mimosa Avenue",
+    "grid": "U2"
+  },
+  "MFQ": {
+    "x": 114.9935,
+    "y": 56.3646,
+    "name": "The Motherfucking Queens",
+    "grid": "W3"
+  },
+  "MUD": {
+    "x": 81.7398,
+    "y": 41.3592,
+    "name": "Mudita",
+    "grid": "U2"
+  },
+  "NDL": {
+    "x": 58.8144,
+    "y": 85.0399,
+    "name": "No Drama Llamas",
+    "grid": "S5"
+  },
+  "PAP": {
+    "x": 51.303,
+    "y": 81.8188,
+    "name": "Pamoja Project",
+    "grid": "S5"
+  },
+  "PAN": {
+    "x": 63.822,
+    "y": 99.3383,
+    "name": "The Pancake People",
+    "grid": "T6"
+  },
+  "PFP": {
+    "x": 37.6103,
+    "y": 70.7415,
+    "name": "Pedals for Peace",
+    "grid": "R4"
+  },
+  "PIC": {
+    "x": 64.2132,
+    "y": 89.3608,
+    "name": "Pickles & Prickles",
+    "grid": "T5"
+  },
+  "PLT": {
+    "x": 106.6996,
+    "y": 23.2898,
+    "name": "Playa Tours",
+    "grid": "V1"
+  },
+  "PCM": {
+    "x": 92.6157,
+    "y": 39.8665,
+    "name": "Professor Cuchulain's Magic Elixirs and Apothecary",
+    "grid": "U2"
+  },
+  "RRH": {
+    "x": 60.6923,
+    "y": 30.6747,
+    "name": "Ra Ra",
+    "grid": "T2"
+  },
+  "SAC": {
+    "x": 85.965,
+    "y": 21.3258,
+    "name": "Sacred Garden",
+    "grid": "U1"
+  },
+  "SEX": {
+    "x": 54.4328,
+    "y": 105.7804,
+    "name": "Sexico City",
+    "grid": "S6"
+  },
+  "SMS": {
+    "x": 63.1961,
+    "y": 96.7457,
+    "name": "Smokescreen",
+    "grid": "T6"
+  },
+  "SOB": {
+    "x": 62.5701,
+    "y": 70.1916,
+    "name": "Soberland",
+    "grid": "T4"
+  },
+  "SCB": {
+    "x": 137.6059,
+    "y": 61.9425,
+    "name": "Space Cowboys",
+    "grid": "X4"
+  },
+  "SPS": {
+    "x": 65.0739,
+    "y": 86.7683,
+    "name": "The Steampunk Saloon",
+    "grid": "T5"
+  },
+  "SUN": {
+    "x": 33.9329,
+    "y": 76.7908,
+    "name": "Sunrisers",
+    "grid": "R4"
+  },
+  "SSO": {
+    "x": 61.7877,
+    "y": 115.8364,
+    "name": "Sunset Oasis",
+    "grid": "T7"
+  },
+  "STR": {
+    "x": 64.6827,
+    "y": 28.5535,
+    "name": "Super Tramps",
+    "grid": "T2"
+  },
+  "SLC": {
+    "x": 55.6064,
+    "y": 93.4461,
+    "name": "The Sweet Love Cinema",
+    "grid": "S5"
+  },
+  "SWR": {
+    "x": 78.4536,
+    "y": 38.5309,
+    "name": "Sweet Reflections",
+    "grid": "U2"
+  },
+  "TAN": {
+    "x": 84.2436,
+    "y": 46.6229,
+    "name": "Tangawizi Collective",
+    "grid": "U3"
+  },
+  "TAQ": {
+    "x": 71.0204,
+    "y": 33.4244,
+    "name": "Tankquility Base",
+    "grid": "T2"
+  },
+  "TEA": {
+    "x": 69.3773,
+    "y": 26.4323,
+    "name": "The Teahouse at the End of the Universe",
+    "grid": "T2"
+  },
+  "THI": {
+    "x": 63.0396,
+    "y": 37.2739,
+    "name": "THIRSTY",
+    "grid": "T2"
+  },
+  "TIF": {
+    "x": 67.1083,
+    "y": 35.1528,
+    "name": "\"This is Fine\" Lab",
+    "grid": "T2"
+  },
+  "TTS": {
+    "x": 93.0852,
+    "y": 49.9225,
+    "name": "Time to Shine",
+    "grid": "U3"
+  },
+  "TUL": {
+    "x": 81.8963,
+    "y": 22.4256,
+    "name": "Tulpa",
+    "grid": "U1"
+  },
+  "TCR": {
+    "x": 94.0241,
+    "y": 56.836,
+    "name": "Two Couches & a Rug",
+    "grid": "U3"
+  },
+  "VAG": {
+    "x": 99.4229,
+    "y": 59.35,
+    "name": "Vagabonds",
+    "grid": "V3"
+  },
+  "TWS": {
+    "x": 41.6008,
+    "y": 79.9333,
+    "name": "The Wet Spot",
+    "grid": "R5"
+  },
+  "WAJ": {
+    "x": 38.9405,
+    "y": 78.912,
+    "name": "Wild & Juicy",
+    "grid": "R5"
+  },
+  "WRW": {
+    "x": 142.77,
+    "y": 50.7081,
+    "name": "Wildrock Workshop",
+    "grid": "X3"
+  },
+  "YPF": {
+    "x": 80.3315,
+    "y": 35.0742,
+    "name": "You're Probably Fine",
+    "grid": "U2"
+  }
+}
